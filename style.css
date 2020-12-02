@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Tahoma;
+    color: black;
+}
+
+.header {
+    background-color: #fd8f00;
+    font-family: "Arial Black";
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.header h1 {
+    display: inline-block;
+    color: #fffd6e;
+}
+
+.flex {
+    display: flex;
+}
+
+.leftcol {
+    width: 20%;
+    padding: 10px;
+    min-height: 500px;
+    background-color: #fbb75f;
+}
+
+.leftcol ul {
+    list-style-type: circle;
+    color: red;
+}
+
+.leftcol ul li {
+    padding: 10px 0 10px 0;
+}
+
+.leftcol ul a {
+    color: #9f0000;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Tahoma;
+}
+
+.leftcol ul a:hover {
+    color: #d64e4e;
+}
+
+.rightcol {
+    width: 80%;
+    min-height: 500px;
+    padding: 10px;
+    text-align: center;
+    background-color: #ffcb87;
+}
+
+.footer {
+    padding: 10px;
+    text-align: right;
+    background-color: rgb(253, 143, 0);
+    clear: both;
+}
+
+#t1 {
+    width: 400px;
+    text-align: center;
+    margin: auto; 
+    border: 1px solid;
+    border-spacing: 0;
+    
+}
+
+#t1 td{
+    border: 1px solid;
+}
+
+#t2 {
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    border: 1px dashed red;
+}
+
+#t2 td{
+    border: 1px dashed red;
+}
+
+#t3 {
+    width: 700px;
+    text-align: center;
+    margin: auto;
+    border: 1px dashed green;
+    background-color: #9bdba9;
+}
+
+#t3 th {
+    border: 1px solid green;
+}
+
+#t3 td {
+    border: 1px dotted green;
+    padding: 10px;
+}
+
+#join {
+    margin: auto
+}
+
+#join td:first-child {
+    text-align: right;
+}
+
+#join td:last-child {
+    text-align: left;
+}
+
+#join input[type=submit] {
+    background-color: green;
+    border: 2px solid black;
+    padding: 5px;
+    color: white
+}
+
+#join input[type=reset] {
+    background-color: red;
+    border: 2px solid black;
+    padding: 5px;
+    color: white
+}
+
+#itog {
+    border: 1px black solid;
+    padding: 5px;
+    min-height: 20px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto 0 auto;
+}

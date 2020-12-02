@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+    <title>SPARTAN GAMING</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Spartan gaming - kalkulator DPS</h1>
+    </div>
+    
+    <div class="flex">
+        <div class="leftcol">
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="druzyny.html">Drużyny</a></li>
+                <li><a href="kalkulator.html">Kalkulator</a></li>
+                <li><a href="dolacz.html">Dołącz do nas!</a></li>
+            </ul>
+        </div>
+
+        <div class="rightcol">
+            
+            Imie postaci:<br>
+            <input type="text" id="formname"><br>
+            Poziom postaci:<br>
+            <input type="number" id="formlvl"><br>
+            Czas trwania walki w sekundach:<br>
+            <input type="text" id="formtime"><br>
+            Obrażenia broni/czaru na sekundę:<br>
+            <input type="text" id="formdmg"><br><br>
+            <input type="submit" value="Oblicz DPS" onclick="obliczDPS()"><br><br>
+            <div id="itog"></div>
+            
+            <script>
+                function obliczDPS() {
+                    var name = document.getElementById('formname').value;
+                    var lvl = parseFloat(document.getElementById('formlvl').value);
+                    var time = parseFloat(document.getElementById('formtime').value);
+                    var dmg = parseFloat(document.getElementById('formdmg').value);
+                    if (lvl > 0 && time > 0 && dmg > 0) {
+                        var itog = dmg * time / lvl;
+                        document.getElementById("itog").innerHTML = 'DPS postaci '+ name +' to: '+ itog;
+                    } else { 
+                        document.getElementById("itog").innerHTML = 'Siadaj jedynka'; 
+                    }
+                }
+            </script>
+            
+        </div>
+    </div>
+    
+    <div class="footer">
+        Daniel Tlałka kl VI TEI<br>
+        <i>Data wykonania: <b>06.11.2019</b> </i>
+        
+    </div>
+    
+</body>
+</html>
